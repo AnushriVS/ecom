@@ -1,0 +1,138 @@
+{
+	
+	"sign-in": {
+		"title": "Login",
+		"username.label": "User Name",
+		"username.placeholder": "Enter the User Name",
+		"password.label": "Password",
+		"password.placeholder": "Enter the Password",
+		"button.signin": "Sign in",
+		"button.forgotpassword": "Forgot Password ?",
+		"button.signup": "Sign up",
+		"button.en": "English",
+		"button.ta": "Tamil",
+		"button.fr": "French",
+		"button.hi": "Hindi"
+	  },
+
+	  "fortune_forge": {
+		"best_sellers": "Best Sellers in Fortune Forge"
+	  },
+	  "best_sellers": {
+		"in_dresses": "Best Sellers in dresses",
+		"in_provisions": "Best Sellers in provisions"
+	  },
+	  "add_to_cart": "Add to cart",
+	  "dresses": {
+		"ethereal_charm": {
+		  "title": "Ethereal Charm: Pink Frock",
+		  "description": "Crafted with soft, flowing fabric, its delicate silhouette is accentuated by intricate lace detailing, making it a perfect choice for any special occasion.",
+		  "alt": "Image 1"
+		},
+		"elegant_simplicity": {
+		  "title": "Elegant Simplicity: The Blue Blossom Frock",
+		  "description": "Wrap yourself in effortless charm with our Blue Blossom Frock. Crafted from soft, sky-blue fabric, its minimalist design exudes timeless elegance. Perfect for any occasion, this frock is a must-have addition to your wardrobe.",
+		  "alt": "Image 2"
+		},
+		"whimsical_white": {
+		  "title": "Whimsical White: Lace Dream Frock",
+		  "description": "Its whimsical charm is heightened by intricate lace overlays, promising to captivate hearts at any event.",
+		  "alt": "Image 3"
+		},
+		"enchanting_emerald": {
+		  "title": "Enchanting Emerald: Green Goddess Frock",
+		  "description": "Channel your inner goddess with our Green Goddess Frock. Its enchanting emerald hue and flowing silhouette evoke a sense of natural beauty and elegance.",
+		  "alt": "Image 4"
+		},
+		"timeless_classic": {
+		  "title": "Timeless Classic: Black Beauty Frock",
+		  "description": "Embrace sophistication with our Black Beauty Frock, a timeless classic for every wardrobe. Its sleek design and versatile style make it a go-to choice for any occasion.",
+		  "alt": "Image 5"
+		},
+		"passionate_red": {
+		  "title": "Passionate Red: Scarlet Siren Frock",
+		  "description": "Ignite your passion with our Scarlet Siren Frock in vibrant red. Its daring hue and figure-flattering fit ensure all eyes are on you, making a bold statement wherever you go.",
+		  "alt": "Image 6"
+		}
+	  },
+	  "provisions": {
+		"golden_harvest": {
+		  "title": "Golden Harvest: Whole Wheat Flour",
+		  "description": "Experience the goodness of our Whole Wheat Flour, made from premium quality wheat grains. Packed with nutrients and freshness, its the perfect choice for wholesome baking and cooking.",
+		  "alt": "Image 7"
+		},
+		"royal_treat": {
+		  "title": "Royal Treat: Basmati Rice",
+		  "description": "Indulge in the royal taste of our Basmati Rice, known for its long grains and exquisite aroma. Whether its for biryanis, pulaos, or simple steamed rice, this premium rice guarantees culinary perfection.",
+		  "alt": "Image 8"
+		},
+		"nutrient_rich": {
+		  "title": "Nutrient-Rich: Ragi Flour",
+		  "description": "Boost your health with our Ragi Flour, a powerhouse of nutrients and energy. With its earthy flavor and versatility its an ideal choice for making nutritious rotis, dosas, and porridges",
+		  "alt": "Image 9"
+		}
+	},
+	"dress.title":{
+		"DRESS_TITLE_1":"DRESS"
+	},
+
+	"CART": {
+		  "SNO": "S.No",
+		  "PRODUCT_NAME": "Product Name",
+		  "PRODUCT_IMAGE": "Product Image",
+		  "DESCRIPTION": "Description",
+		  "PRICE": "Price",
+		  "QUANTITY": "Quantity",
+		  "TOTAL": "Total",
+		  "ACTION": "Action",
+		  "EMPTY_CART": "Empty Cart",
+		  "SHOP_MORE": "Shop More",
+		  "CHECKOUT": "Checkout",
+		  "GRAND_TOTAL": "Grand Total",
+		  "MY_CART": "My Cart",
+		  "EMPTY_MESSAGE": "Your cart is empty!",
+		  "ADD_ITEM_MESSAGE": "Add item to it now",
+		  "SHOP_NOW": "Shop Now"
+		},
+
+			"PRODUCT_DETAILS": {
+			  "HEADER": "Submitted Product Details",
+			  "NAME": "Name of the Product:",
+			  "DESCRIPTION": "Description of the Product:",
+			  "PRICE": "Price:",
+			  "ADD_TO_CART": "Add to Cart"
+			},
+			
+				"NAVIGATION": {
+				  "ALL_PRODUCTS": "All products",
+				  "ELECTRONICS": "Electronics",
+				  "FASHION": "Fashion",
+				  "JEWELLERY": "Jewellery"
+				},
+				"PRODUCT": {
+				  "PRICE": "Price:",
+				  "ADD_TO_CART": "Add to cart"
+				},
+
+					"SELL_PRODUCT": {
+					  "HEADER": "Sell your own product",
+					  "MARQUEE":" The product image must be of high quality.",
+					  "PRODUCT_NAME": "Name of the Product:",
+					  "PRODUCT_DESCRIPTION": "Description of the Product:",
+					  "PRODUCT_IMAGE": "Image of the Product:",
+					  "PRODUCT_PRICE": "Price:",
+					  "SUBMIT": "Submit",
+					  "PRODUCTS_BY_USERS": "Products sold by the Users",
+					  "UPLOAD_SUCCESS": "Product uploaded successfully!"
+					},
+					
+						"DELIVERY_LOCATION": "Delivery Location",
+						"SEARCH": "Search",
+						"SIGN_IN": "Sign In",
+						"MEN":"Men",
+						"WOMEN":"Women",
+						"KIDS":"Kids",
+						"HOME AND KITCHEN":"Home and Kitchen"
+					  }
+					  
+				  

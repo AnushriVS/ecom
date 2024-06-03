@@ -1,0 +1,116 @@
+<div class="content" style="padding-top: 85px;">
+<div class="container">
+  <h2>My Orders</h2>
+  <table class="table table-responsive">
+    <thead>
+      <tr>
+        <th>S.No</th>
+        <th>Product Name</th>
+        <th>Product Image</th>
+        <th>Description</th>
+        <th>Price</th>
+        <th>Quantity</th>
+        <th>Total</th>
+        <th>Action</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let item of orders; let i = index">
+        <td>{{ i + 1 }}</td>                         
+        <td>{{ item.title }}</td>
+        <td><img style="width: 120px" [src]="item.image" alt=""></td>
+        <td>{{ item.description }}</td>
+        <td>{{ item.price }}</td>
+        <td>{{ item.quantity }}</td>
+        <td>{{ item.total }}</td>
+        <td><button (click)="cancelOrder(item)" class="btn btn-danger">Cancel</button></td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h2>Canceled Orders</h2>
+  <table class="table table-responsive">
+    <thead>
+      <tr>
+        <th>S.No</th>
+        <th>Product Name</th>
+        <th>Product Image</th>
+        <th>Description</th>
+        <th>Price</th>
+        <th>Quantity</th>
+        <th>Total</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let item of canceledOrders; let i = index">
+        <td>{{ i + 1 }}</td>
+        <td>{{ item.title }}</td>
+        <td><img style="width: 120px" [src]="item.image" alt=""></td>
+        <td>{{ item.description }}</td>
+        <td>{{ item.price }}</td>
+        <td>{{ item.quantity }}</td>
+        <td>{{ item.total }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+</div>
+<!-- <div class="content" style="padding-top: 85px;">
+  <div class="container">
+    <h2>My Orders</h2>
+    <table class="table table-responsive" *ngIf="orders.length > 0">
+      <thead>
+        <tr>
+          <th>S.No</th>
+          <th>Product Name</th>
+          <th>Product Image</th>
+          <th>Description</th>
+          <th>Price</th>
+          <th>Quantity</th>
+          <th>Total</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let item of orders; let i = index">
+          <td>{{ i + 1 }}</td>                         
+          <td>{{ item.title }}</td>
+          <td><img style="width: 120px" [src]="item.image" alt=""></td>
+          <td>{{ item.description }}</td>
+          <td>{{ item.price }}</td>
+          <td>{{ item.quantity }}</td>
+          <td>{{ item.total }}</td>
+          <td><button (click)="cancelOrder(item)" class="btn btn-danger">Cancel</button></td>
+        </tr>
+      </tbody>
+    </table>
+    <p *ngIf="orders.length === 0">NO ORDERS</p>
+
+    <h2>Canceled Orders</h2>
+    <table class="table table-responsive" *ngIf="canceledOrders.length > 0">
+      <thead>
+        <tr>
+          <th>S.No</th>
+          <th>Product Name</th>
+          <th>Product Image</th>
+          <th>Description</th>
+          <th>Price</th>
+          <th>Quantity</th>
+          <th>Total</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let item of canceledOrders; let i = index">
+          <td>{{ i + 1 }}</td>
+          <td>{{ item.title }}</td>
+          <td><img style="width: 120px" [src]="item.image" alt=""></td>
+          <td>{{ item.description }}</td>
+          <td>{{ item.price }}</td>
+          <td>{{ item.quantity }}</td>
+          <td>{{ item.total }}</td>
+        </tr>
+      </tbody>
+    </table>
+    <p *ngIf="canceledOrders.length === 0">NO CANCELED ORDERS</p>
+  </div>
+</div> -->

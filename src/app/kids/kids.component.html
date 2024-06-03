@@ -1,0 +1,120 @@
+<!-- <div class="content" style="padding-top: 65px;">
+<div class="container">
+    <div class="header">
+      <div class="breadcrumbs">
+        <span>Home / Seasonal Sales and Discounts on Kids' Fashion</span>
+      </div>
+      <h1> Seasonal Sales and Discounts on Kids' Fashion</h1>
+      <div class="controls">
+        <span>{{ totalItems }} Items Found</span>
+        <div class="grid-controls">
+          <span>GRID</span>
+          <div class="grid-icons">
+            <div class="grid-icon" [class.active]="gridSize === 2" (click)="onGridSizeChange(2)">
+              <div class="grid-2-icon"></div>
+            </div>
+            <div class="grid-icon" [class.active]="gridSize === 3" (click)="onGridSizeChange(3)">
+              <div class="grid-3-icon"></div>
+            </div>
+            <div class="grid-icon" [class.active]="gridSize === 4" (click)="onGridSizeChange(4)">
+              <div class="grid-4-icon"></div>
+            </div>
+            <div class="grid-icon" [class.active]="gridSize === 5" (click)="onGridSizeChange(5)">
+              <div class="grid-5-icon"></div>
+            </div>
+          </div>
+        </div>
+        <div class="sort-controls">
+          <label for="sort-by">Sort By</label>
+          <select id="sort-by" [(ngModel)]="sortBy" (change)="sortProducts()">
+            <option *ngFor="let option of sortOptions" [value]="option">{{ option }}</option>
+          </select>
+        </div>
+      </div>
+    </div>
+    <div class="product-grid" [ngClass]="'grid-' + gridSize">
+      <div *ngFor="let product of products; let i = index" class="product-card">
+        <div class="product-image" (mouseover)="showQuickViewOption(i)" (mouseleave)="hideQuickViewOption()">
+          <img [src]="product.image" [alt]="product.title" />
+          <div class="quick-view" *ngIf="quickViewIndex === i" (click)="openQuickViewDialog(product, i)">
+            QUICK VIEW
+          </div>
+        </div>
+        <div class="product-info">
+          <p class="title">{{ product.title }}</p>
+          <p class="description">{{ product.description }}</p>
+          <p class="rating">
+            <span>{{ product.rating }}★</span>
+            <span>{{ product.reviews }} Ratings</span>
+          </p>
+          <p class="price">{{ product.price | currency }}</p>
+          <p class="offer-price">Offer price {{ product.offerPrice | currency }}</p>
+          <p class="discount">{{ product.discount }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+   -->
+   <div class="content" style="padding-top: 65px;">
+    <div class="container">
+      <div class="header">
+        <div class="breadcrumbs">
+          <span>Home / Seasonal Sales and Discounts on Kids' Fashion</span>
+        </div>
+        <h1>Seasonal Sales and Discounts on Kids' Fashion</h1>
+        <div class="controls">
+          <span>{{ totalItems }} Items Found</span>
+          <div class="search-controls">
+            <input type="text" placeholder="Search products..." [(ngModel)]="searchQuery" (input)="filterProducts()" />
+          </div>
+          <div class="grid-controls">
+            <span>GRID</span>
+            <div class="grid-icons">
+              <div class="grid-icon" [class.active]="gridSize === 2" (click)="onGridSizeChange(2)">
+                <div class="grid-2-icon"></div>
+              </div>
+              <div class="grid-icon" [class.active]="gridSize === 3" (click)="onGridSizeChange(3)">
+                <div class="grid-3-icon"></div>
+              </div>
+              <div class="grid-icon" [class.active]="gridSize === 4" (click)="onGridSizeChange(4)">
+                <div class="grid-4-icon"></div>
+              </div>
+              <div class="grid-icon" [class.active]="gridSize === 5" (click)="onGridSizeChange(5)">
+                <div class="grid-5-icon"></div>
+              </div>
+            </div>
+          </div>
+          <div class="sort-controls">
+            <label for="sort-by">Sort By</label>
+            <select id="sort-by" [(ngModel)]="sortBy" (change)="sortProducts()">
+              <option *ngFor="let option of sortOptions" [value]="option">{{ option }}</option>
+            </select>
+          </div>
+        </div>
+        
+      </div>
+      <div class="product-grid" [ngClass]="'grid-' + gridSize">
+        <div *ngFor="let product of filteredProducts; let i = index" class="product-card">
+          <div class="product-image" (mouseover)="showQuickViewOption(i)" (mouseleave)="hideQuickViewOption()">
+            <img [src]="product.image" [alt]="product.title" />
+            <div class="quick-view" *ngIf="quickViewIndex === i" (click)="openQuickViewDialog(product, i)">
+              QUICK VIEW
+            </div>
+          </div>
+          <div class="product-info">
+            <p class="title">{{ product.title }}</p>
+            <p class="description">{{ product.description }}</p>
+            <p class="rating">
+              <span>{{ product.rating }}★</span>
+              <span>{{ product.reviews }} Ratings</span>
+            </p>
+            <p class="price">{{ product.price | currency }}</p>
+            <p class="offer-price">Offer price {{ product.offerPrice | currency }}</p>
+            <p class="discount">{{ product.discount }}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  

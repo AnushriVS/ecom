@@ -1,0 +1,17 @@
+<div class="content" style="padding-top: 65px;">
+<div class="coupon-container">
+    <div class="coupon" *ngFor="let coupon of coupons">
+      <img [src]="coupon.image" alt="Coupon Image" class="coupon-image">
+      <div class="coupon-details">
+        <h2>{{ coupon.title }}</h2>
+        <p>{{ coupon.description }}</p>
+        <div class="coupon-code-container">
+          <span class="coupon-code">{{ coupon.code }}</span>
+          <button class="clipboard-btn" (click)="copyToClipboard(coupon.code)">
+            Copy
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

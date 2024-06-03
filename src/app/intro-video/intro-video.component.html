@@ -1,0 +1,15 @@
+<!-- <div class="intro-video-container" *ngIf="showVideo">
+    <video #video width="100%" (ended)="onVideoEnded()" autoplay muted>
+      <source src="assets/video.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </div> -->
+
+  <!--Demo for html-->
+  <div class="intro-video-container" *ngIf="showVideo">
+    <video #video width="100%" controls autoplay muted (ended)="onVideoEnded()">
+      <source src="assets/video.mp4" type="video/mp4">
+      Your browser does not support HTML video.
+    </video>
+  </div>
+  

@@ -1,0 +1,250 @@
+.container {
+    padding: 20px;
+  }
+  
+  .header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .breadcrumbs {
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+  
+  .controls {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  .grid-controls {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .grid-icons {
+    display: flex;
+    gap: 5px;
+  }
+  
+  .grid-icon {
+    width: 20px;
+    height: 20px;
+    border: 1px solid #ccc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+  
+  .grid-icon.active {
+    border-color: #000;
+  }
+  
+  .grid-2-icon, .grid-3-icon, .grid-4-icon, .grid-5-icon {
+    background: #ccc;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .grid-2-icon {
+    background: linear-gradient(to right, #ccc 50%, #fff 50%);
+  }
+  
+  .grid-3-icon {
+    background: linear-gradient(to right, #ccc 33.33%, #fff 33.33%, #fff 66.66%, #ccc 66.66%);
+  }
+  
+  .grid-4-icon {
+    background: linear-gradient(to right, #ccc 25%, #fff 25%, #fff 50%, #ccc 50%, #ccc 75%, #fff 75%);
+  }
+  
+  .grid-5-icon {
+    background: linear-gradient(to right, #ccc 20%, #fff 20%, #fff 40%, #ccc 40%, #ccc 60%, #fff 60%, #fff 80%, #ccc 80%);
+  }
+  
+  .product-grid {
+    display: grid;
+    gap: 10px; 
+  }
+  
+  .grid-2 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .grid-3 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  
+  .grid-4 {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  
+  .grid-5 {
+    grid-template-columns: repeat(5, 1fr);
+  }
+  
+  .product-card {
+    background: white;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s;
+    padding: 10px; 
+  }
+  
+  .product-card:hover {
+    transform: translateY(-10px);
+  }
+  
+  .product-image {
+    position: relative;
+    overflow: hidden;
+    height: 200px; 
+  }
+  
+  .product-image img {
+    width: 100%;
+    height: 100%; 
+    display: block;
+    object-fit: cover; 
+  }
+  
+  .quick-view {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    text-align: center;
+    padding: 5px; 
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+  
+  .product-image:hover .quick-view {
+    opacity: 1;
+  }
+  
+  .product-info {
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .product-info .title {
+    font-size: 14px; 
+    font-weight: bold;
+  }
+  
+  .product-info .description {
+    color: #666;
+    font-size: 12px; 
+  }
+  
+  .product-info .price {
+    color: red;
+    font-weight: bold;
+    font-size: 14px; 
+  }
+  
+  .product-info .offer-price {
+    color: green;
+    font-size: 12px; 
+  }
+  
+  .product-info .discount {
+    color: #999;
+    font-size: 10px; 
+  }
+  
+  .custom-dialog-container {
+    transform: translate(-50%, -50%);
+  }
+  
+  
+  @media (max-width: 575.98px) {
+    .controls {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    
+    .product-grid {
+      grid-template-columns: repeat(1, 1fr); 
+    }
+  
+    .grid-controls, .sort-controls {
+      justify-content: space-between;
+      width: 100%;
+    }
+    
+    .product-card {
+      padding: 5px;
+    }
+    
+    .product-image {
+      height: 150px; 
+    }
+  }
+  
+  
+  @media (min-width: 576px) and (max-width: 767.98px) {
+    .controls {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .product-grid.grid-2 {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .product-grid.grid-3,
+    .product-grid.grid-4,
+    .product-grid.grid-5 {
+      grid-template-columns: repeat(2, 1fr); 
+    }
+    
+    .product-card {
+      padding: 8px;
+    }
+    
+    .product-image {
+      height: 180px; 
+    }
+  }
+  
+  @media (min-width: 768px) and (max-width: 991.98px) {
+    .product-grid.grid-3 {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  
+    .product-grid.grid-4,
+    .product-grid.grid-5 {
+      grid-template-columns: repeat(3, 1fr); 
+    }
+    
+    .product-card {
+      padding: 9px;
+    }
+    
+    .product-image {
+      height: 200px;
+    }
+  }
+  
+  @media (min-width: 992px) {
+    .product-grid.grid-4 {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  
+    .product-grid.grid-5 {
+      grid-template-columns: repeat(5, 1fr);
+    }
+  }
+  

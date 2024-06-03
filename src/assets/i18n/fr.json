@@ -1,0 +1,143 @@
+{
+
+	"sign-in": {
+		"title": "Se connecter",
+		"username.label": "Nom d'utilisateur",
+		"username.placeholder": "Entrez le nom d'utilisateur",
+		"password.label": "Mot de passe",
+		"password.placeholder": "Entrer le mot de passe",
+		"button.signin": "Se connecter",
+		"button.forgotpassword": "Mot de passe oublié ?",
+		"button.signup": "S'inscrire",
+		"button.en": "Anglaise",
+		"button.ta": "Tamil",
+		"button.fr": "Française",
+		"button.hi": "Hindi"
+	  },
+
+	  "fortune_forge": {
+		"best_sellers": "Les meilleures ventes dans Fortune Forge"
+	  },
+	  "best_sellers": {
+		"in_dresses": "Les meilleures ventes de robes",
+		"in_provisions": "Meilleures ventes en provisions"
+	  },
+	  "add_to_cart": "Ajouter au panier",
+
+	  "dresses": {
+		"ethereal_charm": {
+		  "title": "Charme éthéré : robe rose",
+		  "description": "Confectionnée dans un tissu doux et fluide, sa silhouette délicate est accentuée par des détails en dentelle complexes, ce qui en fait un choix parfait pour toute occasion spéciale.",
+		  "alt": "Image 1"
+		},
+		"elegant_simplicity": {
+		  "title": "Simplicité élégante : la robe Blue Blossom",
+		  "description": "Enveloppez-vous de charme sans effort avec notre robe Blue Blossom. Confectionné dans un tissu bleu ciel doux, son design minimaliste dégage une élégance intemporelle. Parfaite en toute occasion, cette robe est un ajout incontournable à votre garde-robe.",
+		  "alt": "Image 2"
+		},
+		"whimsical_white": {
+		  "title": "Blanc fantaisiste : robe de rêve en dentelle",
+		  "description": "Son charme fantaisiste est rehaussé par des superpositions de dentelle complexes, promettant de captiver les cœurs à tout événement.",
+		  "alt": "Image 3"
+		},
+		"enchanting_emerald": {
+		  "title": "Émeraude enchanteresse : robe de déesse verte",
+		  "description": "Canalisez votre déesse intérieure avec notre robe de déesse verte. Sa teinte émeraude enchanteresse et sa silhouette fluide évoquent un sentiment de beauté naturelle et d'élégance.",
+		  "alt": "Image 4"
+		},
+		"timeless_classic": {
+		  "title": "Classique intemporel : la robe de beauté noire",
+		  "description": "Adoptez la sophistication avec notre Black Beauty Frock, un classique intemporel pour chaque garde-robe. Son design élégant et son style polyvalent en font un choix incontournable pour toutes les occasions.",
+		  "alt": "Image 5"
+		},
+		"passionate_red": {
+		  "title": "Rouge passionné : robe de sirène écarlate",
+		  "description": "Allumez votre passion avec notre robe Scarlet Siren en rouge vif. Sa teinte audacieuse et sa coupe flatteuse garantissent que tous les regards sont rivés sur vous, faisant une déclaration audacieuse partout où vous allez.",
+		  "alt": "Image 6"
+		}
+	  },
+	  "provisions": {
+		"golden_harvest": {
+		  "title": "Golden Harvest : Farine de blé entier",
+		  "description": "Découvrez les bienfaits de notre farine de blé entier, fabriquée à partir de grains de blé de première qualité. Rempli de nutriments et de fraîcheur, c'est le choix parfait pour une pâtisserie et une cuisine saines.",
+		  "alt": "Image 7"
+		},
+		"royal_treat": {
+		  "title": "Gâterie royale : riz basmati",
+		  "description": "Laissez-vous tenter par le goût royal de notre riz basmati, connu pour ses grains longs et son arôme exquis. Que ce soit pour des biryanis, des pulaos ou un simple riz cuit à la vapeur, ce riz haut de gamme garantit la perfection culinaire.",
+		  "alt": "Image 8"
+		},
+		"nutrient_rich": {
+		  "title": "Riche en nutriments : Farine de Ragi",
+		  "description": "Améliorez votre santé avec notre farine Ragi, une centrale de nutriments et d'énergie. Avec sa saveur terreuse et sa polyvalence, c'est un choix idéal pour préparer des rotis, dosas et porridges nutritifs.",
+		  "alt": "Image 9"
+		}
+	},
+		"CART": {
+		  "SNO": "N°",
+		  "PRODUCT_NAME": "Nom du produit",
+		  "PRODUCT_IMAGE": "Image du produit",
+		  "DESCRIPTION": "Description",
+		  "PRICE": "Prix",
+		  "QUANTITY": "Quantité",
+		  "TOTAL": "Total",
+		  "ACTION": "Action",
+		  "EMPTY_CART": "Vider le panier",
+		  "SHOP_MORE": "Acheter plus",
+		  "CHECKOUT": "Passer à la caisse",
+		  "GRAND_TOTAL": "Total général",
+		  "MY_CART": "Mon panier",
+		  "EMPTY_MESSAGE": "Votre panier est vide!",
+		  "ADD_ITEM_MESSAGE": "Ajoutez un article maintenant",
+		  "SHOP_NOW": "Achetez maintenant"
+		},
+	
+			"PRODUCT_DETAILS": {
+			  "HEADER": "Détails du produit soumis",
+			  "NAME": "Nom du produit :",
+			  "DESCRIPTION": "Description du produit :",
+			  "PRICE": "Prix :",
+			  "ADD_TO_CART": "Ajouter au panier"
+			},
+			
+				"NAVIGATION": {
+				  "ALL_PRODUCTS": "Tous les produits",
+				  "ELECTRONICS": "Électronique",
+				  "FASHION": "Mode",
+				  "JEWELLERY": "Bijoux"
+				},
+				"PRODUCT": {
+				  "PRICE": "Prix :",
+				  "ADD_TO_CART": "Ajouter au panier"
+				},
+				
+					"SELL_PRODUCT": {
+					  "HEADER": "Vendez votre propre produit",
+					  "MARQUEE":"L'image du produit doit être de haute qualité.",
+					  "PRODUCT_NAME": "Nom du produit :",
+					  "PRODUCT_DESCRIPTION": "Description du produit :",
+					  "PRODUCT_IMAGE": "Image du produit :",
+					  "PRODUCT_PRICE": "Prix :",
+					  "SUBMIT": "Soumettre",
+					  "PRODUCTS_BY_USERS": "Produits vendus par les utilisateurs",
+					  "UPLOAD_SUCCESS": "Produit téléchargé avec succès !"
+					},
+						"DELIVERY_LOCATION": "Lieu de livraison",
+						"SEARCH": "Chercher",
+						"SIGN_IN": "Se connecter",
+						"MEN": "Hommes",
+                        "WOMEN": "Femmes",
+                        "KIDS": "Enfants",
+                        "HOME AND KITCHEN": "Maison et Cuisine"
+					  
+						
+				  }
+				  
+			  
+			  
+
+		  
+	  
+	  
+
+

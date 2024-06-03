@@ -1,0 +1,89 @@
+{
+	
+	"sign-in": {
+		"title": "लॉगिन",
+		"username.label": "उपयोगकर्ता नाम",
+		"username.placeholder": "उपयोगकर्ता नाम दर्ज करें",
+		"password.label": "पासवर्ड",
+		"password.placeholder": "पासवर्ड दर्ज करें",
+		"button.signin": "साइन इन करें",
+		"button.forgotpassword": " पासवर्ड भूल गए?",
+		"button.signup": "साइन अप करें",
+		"button.en": "अंग्रेजी",
+		"button.ta": "तमिल",
+		"button.fr": "फ़्रेंच",
+		"button.hi": "हिन्दी"
+	  },
+	  
+	  "fortune_forge": {
+		"best_sellers": "फॉर्च्यून फोर्ज में सर्वाधिक बिकने वाले"
+	  },
+	  "best_sellers": {
+		"in_dresses": "पोशाकों में सर्वाधिक बिकने वाले",
+		"in_provisions": "प्रावधानों में सर्वश्रेष्ठ विक्रेता"
+	  },
+	  "add_to_cart": "कार्ट में जोड़ें",
+
+		"CART": {
+		  "SNO": "क्रम संख्या",
+		  "PRODUCT_NAME": "उत्पाद का नाम",
+		  "PRODUCT_IMAGE": "उत्पाद की छवि",
+		  "DESCRIPTION": "विवरण",
+		  "PRICE": "मूल्य",
+		  "QUANTITY": "मात्रा",
+		  "TOTAL": "कुल",
+		  "ACTION": "कार्य",
+		  "EMPTY_CART": "कार्ट खाली करें",
+		  "SHOP_MORE": "और खरीदें",
+		  "CHECKOUT": "चेक आउट",
+		  "GRAND_TOTAL": "कुल योग",
+		  "MY_CART": "मेरा कार्ट",
+		  "EMPTY_MESSAGE": "आपका कार्ट खाली है!",
+		  "ADD_ITEM_MESSAGE": "अब इसमें आइटम जोड़ें",
+		  "SHOP_NOW": "अभी खरीदें"
+		},
+	
+			"PRODUCT_DETAILS": {
+			  "HEADER": "प्रस्तुत उत्पाद विवरण",
+			  "NAME": "उत्पाद का नाम:",
+			  "DESCRIPTION": "उत्पाद का विवरण:",
+			  "PRICE": "मूल्य:",
+			  "ADD_TO_CART": "कार्ट में डालें"
+			},
+			
+				"NAVIGATION": {
+				  "ALL_PRODUCTS": "सभी उत्पाद",
+				  "ELECTRONICS": "इलेक्ट्रॉनिक्स",
+				  "FASHION": "फैशन",
+				  "JEWELLERY": "आभूषण"
+				},
+				"PRODUCT": {
+				  "PRICE": "मूल्य:",
+				  "ADD_TO_CART": "कार्ट में जोड़ें"
+				},
+				
+					"SELL_PRODUCT": {
+					  "HEADER": "अपने उत्पाद बेचें",
+					  "MARQUEE":"उत्पाद की छवि उच्च गुणवत्ता की होनी चाहिए।",
+					  "PRODUCT_NAME": "उत्पाद का नाम:",
+					  "PRODUCT_DESCRIPTION": "उत्पाद का विवरण:",
+					  "PRODUCT_IMAGE": "उत्पाद की छवि:",
+					  "PRODUCT_PRICE": "मूल्य:",
+					  "SUBMIT": "प्रस्तुत करें",
+					  "PRODUCTS_BY_USERS": "उपयोगकर्ताओं द्वारा बेचे गए उत्पाद",
+					  "UPLOAD_SUCCESS": "उत्पाद सफलतापूर्वक अपलोड हो गया है!"
+					},
+					
+						"DELIVERY_LOCATION": "वितरण स्थान",
+						"SEARCH": "खोज",
+						"SIGN_IN": "साइन इन करें",
+						"MEN": "पुरुष",
+                        "WOMEN": "महिलाएँ ",
+                        "KIDS": "बच्चे" ,
+                        "HOME AND KITCHEN": "घर और रसोई "
+				  
+			  
+			  
+		  }
+		  
+	  

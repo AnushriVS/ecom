@@ -1,0 +1,20 @@
+<div class="sidebar-container" (click)="onOutsideClick($event)">
+  <div class="sidebar-opener" (click)="toggleSidebar()">
+    <div class="teal-box">
+      <i class="fas fa-bars"></i>
+    </div>
+  </div>
+  
+  <div class="sidebar-slider" [class.sidebar-slide-in]="sidebarShow">
+    <div class="sidebar-close" (click)="toggleSidebar()">X</div>
+    <div class="sidebar-content">
+      <a [routerLink]="['/home']" routerLinkActive="active"  >
+      <h2><img alt="logo" src="assets/logo.png"/></h2></a>
+      <hr style="width:80%;text-align:center;margin:0 auto;" />
+      <div class="sidebar-item" *ngFor="let item of sidebarItems">
+        <a href="#" [routerLink]="item.path" routerLinkActive="active">{{item.name}}</a>
+      </div>    
+     
+    </div>
+  </div>
+</div>

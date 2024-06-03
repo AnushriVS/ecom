@@ -1,0 +1,156 @@
+<!-- <div class="content" style="padding-top: 85px;">
+  <ng-container *ngIf="products.length != 0">
+  <div class="container">
+    <div class="card-table">
+      <div class="cart-product">
+        <table class="table table-responsive">
+          <thead>
+            <tr> 
+              <th>{{ 'CART.SNO' | translate }}</th>
+              <th>{{ 'CART.PRODUCT_NAME' | translate }}</th>
+              <th>{{ 'CART.PRODUCT_IMAGE' | translate }}</th>
+              <th>{{ 'CART.DESCRIPTION' | translate }}</th>
+              <th>{{ 'CART.PRICE' | translate }}</th>
+              <th>{{ 'CART.QUANTITY' | translate }}</th>
+              <th>{{ 'CART.TOTAL' | translate }}</th>
+              <th>{{ 'CART.ACTION' | translate }}</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let item of products; let i = index">
+              <td>{{ i + 1 }}</td>
+              <td>{{ item.title }}</td>
+              <td><img style="width: 120px" [src]="item.image" alt="Product Image"></td>
+              <td style="width: 25%">{{ item.description }}</td>
+              <td style="width: 12%">{{ item.price }}</td> -->
+
+              <!-- <td style="width: 12%">{{ item.quantity }}</td> -->
+              <!-- <td style="width: 12%">
+  <div class="quantity-control">
+    <button (click)="decreaseQuantity(item)" class="btn btn-sm btn-outline-secondary"><i class="fas fa-minus"></i></button>
+    <span>{{ item.quantity }}</span>
+    <button (click)="increaseQuantity(item)" class="btn btn-sm btn-outline-secondary"><i class="fas fa-plus"></i></button>
+  </div>
+</td>
+              <td style="width: 12%">{{ item.total }}</td>
+              <td>
+                <button (click)="removeItem(item)" class="btn btn-danger"><i class="fas fa-trash"></i></button>
+              </td>
+            </tr>
+            <tr>
+              <td colspan="4">
+                <input type="text" [(ngModel)]="couponCode" placeholder="Enter Coupon Code" (input)="applyCoupon()" class="form-control"/>
+              </td>
+              <td><button (click)="emptycart()" class="btn btn-danger">{{ 'CART.EMPTY_CART' | translate }}</button></td>
+              <td><button routerLink="/products" class="btn btn-primary">{{ 'CART.SHOP_MORE' | translate }}</button></td>
+              <td><button routerLink="/payment" class="btn btn-success">{{ 'CART.CHECKOUT' | translate }}</button></td>
+              <td><strong>{{ 'CART.GRAND_TOTAL' | translate }}: ₹{{ grandTotal | number:'1.2-2' }}</strong></td>
+            </tr>
+            <tr>
+              <td colspan="7" class="text-right"><strong>Shipping: ₹{{ shippingAmount }}</strong></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</ng-container>
+
+<ng-container *ngIf="products.length == 0">
+  <div class="container">
+    <div class="card">
+      <h5 class="card-title">{{ 'CART.MY_CART' | translate }}</h5>
+    </div>
+    <div class="center">
+      <img src="assets/cart/cart.png" alt="Empty Cart">
+      <h4>{{ 'CART.EMPTY_MESSAGE' | translate }}</h4>
+      <h6>{{ 'CART.ADD_ITEM_MESSAGE' | translate }}</h6>
+      <button class="btn btn-primary" routerLink="/products">{{ 'CART.SHOP_NOW' | translate }}</button>
+    </div>
+  </div>
+</ng-container>
+
+<div class="paypal-container" *ngIf="products.length != 0">
+  <div class="amount">Total amount to pay: ₹{{ grandTotal | number:'1.2-2' }}</div>
+  <div class="info">Please do not refresh the browser while the transaction is processing</div>
+  <div #paymentRef></div>
+</div>
+</div> -->
+
+<div class="content" style="padding-top: 85px;">
+  <ng-container *ngIf="products.length != 0">
+    <div class="container">
+      <div class="card-table">
+        <div class="cart-product">
+          <table class="table table-responsive">
+            <thead>
+              <tr>
+                <th>{{ 'CART.SNO' | translate }}</th>
+                <th>{{ 'CART.PRODUCT_NAME' | translate }}</th>
+                <th>{{ 'CART.PRODUCT_IMAGE' | translate }}</th>
+                <th>{{ 'CART.DESCRIPTION' | translate }}</th>
+                <th>{{ 'CART.PRICE' | translate }}</th>
+                <th>{{ 'CART.QUANTITY' | translate }}</th>
+                <th>{{ 'CART.TOTAL' | translate }}</th>
+                <th>{{ 'CART.ACTION' | translate }}</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let item of products; let i = index">
+                <td>{{ i + 1 }}</td>
+                <td>{{ item.title }}</td>
+                <td><img style="width: 120px" [src]="item.image" alt="Product Image"></td>
+                <td style="width: 25%">{{ item.description }}</td>
+                <td style="width: 12%">{{ item.price | currency }}</td>
+                <td style="width: 12%">
+                  <div class="quantity-control">
+                    <button (click)="decreaseQuantity(item)" class="btn btn-sm btn-outline-secondary"><i class="fas fa-minus"></i></button>
+                    <span>{{ item.quantity }}</span>
+                    <button (click)="increaseQuantity(item)" class="btn btn-sm btn-outline-secondary"><i class="fas fa-plus"></i></button>
+                  </div>
+                </td>
+                <td style="width: 12%">{{ item.total | currency }}</td>
+                <td>
+                  <button (click)="removeItem(item)" class="btn btn-danger"><i class="fas fa-trash"></i></button>
+                </td>
+              </tr>
+              <tr>
+                <td colspan="4">
+                  <input type="text" [(ngModel)]="couponCode" placeholder="Enter Coupon Code" (input)="applyCoupon()" class="form-control"/>
+                </td>
+                <td><button (click)="emptyCart()" class="btn btn-danger">{{ 'CART.EMPTY_CART' | translate }}</button></td>
+                <td><button routerLink="/products" class="btn btn-primary">{{ 'CART.SHOP_MORE' | translate }}</button></td>
+                <td><button routerLink="/payment" class="btn btn-success">{{ 'CART.CHECKOUT' | translate }}</button></td>
+                <td><strong>{{ 'CART.GRAND_TOTAL' | translate }}: {{ grandTotal | currency }}</strong></td>
+              </tr>
+              <tr>
+                <td colspan="7" class="text-right"><strong>Shipping Amount: {{ shippingAmount | currency }}</strong></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </ng-container>
+
+  <ng-container *ngIf="products.length == 0">
+    <div class="container">
+      <div class="card">
+        <h5 class="card-title">{{ 'CART.MY_CART' | translate }}</h5>
+      </div>
+      <div class="center">
+        <img src="assets/cart/cart.png" alt="Empty Cart">
+        <h4>{{ 'CART.EMPTY_MESSAGE' | translate }}</h4>
+        <h6>{{ 'CART.ADD_ITEM_MESSAGE' | translate }}</h6>
+        <button class="btn btn-primary" routerLink="/products">{{ 'CART.SHOP_NOW' | translate }}</button>
+      </div>
+    </div>
+  </ng-container>
+
+  <div class="paypal-container" *ngIf="products.length != 0">
+    <div class="amount">Total amount to pay: ₹{{ grandTotal | number:'1.2-2' }}</div>
+    <div class="info">Please do not refresh the browser while the transaction is processing</div>
+    <div #paymentRef></div>
+  </div>
+  
+</div>

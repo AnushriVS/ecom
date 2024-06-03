@@ -1,0 +1,31 @@
+<div class="content" style="padding-top: 65px;">
+<div>
+    <h1>Fill With Dots</h1>
+    <div class="game-container">
+      <div
+        #dotRefs
+        class="dot"
+        *ngFor="let dot of dots"
+        (mouseover)="changeStyle(dotRefs)"
+      ></div>
+    </div>
+    <div class="result">
+      <div *ngIf="isGameStarted && !isGameEnded">{{counter}}</div>
+      <div *ngIf="!isGameStarted && !isGameEnded">
+        Move your mouse inside the box to start the game
+      </div>
+      <div *ngIf="isGameStarted && isGameEnded && isWon" @winAnimation>
+        Wow! You Won!
+        <div class="celebration">
+          <div class="confetti" *ngFor="let n of [].constructor(100)"></div>
+        </div>
+      </div>
+      <div *ngIf="isGameStarted && isGameEnded && !isWon" @loseAnimation>
+        <span>Oh no! You missed by {{cleanCount}} dots!</span>
+        <div class="sad-emoji">😢</div>
+      </div>
+    </div>
+  </div>
+  <div class="content" style="padding-top: 65px;"></div>
+
+  

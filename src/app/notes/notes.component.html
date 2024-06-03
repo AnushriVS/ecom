@@ -1,0 +1,55 @@
+<!--   
+   <div class="note-maker">
+    <button (click)="addNote()">Add New Note</button>
+  
+    <div *ngFor="let note of notes; let i = index" class="note" [style.background-color]="note.color">
+      <textarea [(ngModel)]="note.content"></textarea>
+      <button (click)="deleteNote(i)">Delete</button>
+    </div>
+  </div>
+     -->
+     <div class="content" style="padding-top: 65px;">
+     <div class="container">
+      <div class="note-maker">
+        <button (click)="addNote()">Add New Note</button>
+    
+        <div class="notes-container">
+          <div *ngFor="let note of notes; let i = index" class="note" [style.background-color]="note.color">
+            <textarea [(ngModel)]="note.content"></textarea>
+            <button (click)="deleteNote(i)">Delete</button>
+          </div>
+        </div>
+      </div>
+    
+      <div class="drawing-area">
+        <canvas #drawingCanvas width="500" height="500" (mousedown)="startDrawing($event)" (mousemove)="draw($event)" (mouseup)="stopDrawing()" (mouseleave)="stopDrawing()"></canvas>
+    
+        <div class="controls">
+          <label for="bgColor">Background Color:</label>
+          <input type="color" id="bgColor" (input)="changeBackgroundColor($event)">
+    
+          <label for="penColor">Pen Color:</label>
+          <input type="color" id="penColor" (input)="changePenColor($event)">
+    
+          <label for="penWidth">Pen Width:</label>
+          <input type="range" id="penWidth" min="1" max="50" [(ngModel)]="penWidth">
+    
+          <label for="eraserSize">Eraser Size:</label>
+          <input type="range" id="eraserSize" min="1" max="50" [(ngModel)]="eraserSize">
+    
+          <button (click)="enableEraser()">Eraser</button>
+          <button (click)="clearDrawing()">Clear Drawing</button>
+
+          <input type="file" (change)="insertImage($event)">
+
+        
+        </div>
+      </div>
+    </div>
+    </div>
+    
+      <!-- <button (click)="drawRectangle()">Rectangle</button>
+      <button (click)="drawCircle()">Circle</button> -->
+    
+   
+    

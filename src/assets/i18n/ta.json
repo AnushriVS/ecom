@@ -1,0 +1,90 @@
+{
+	
+	"sign-in": {
+		"title": "உள்நுழைய",
+		"username.label": "பயனர் பெயர்",
+		"username.placeholder": "பயனர் பெயரை உள்ளிடவும்",
+		"password.label": "கடவுச்சொல்",
+		"password.placeholder": "கடவுச்சொல்லை உள்ளிடவும்",
+		"button.signin": "உள்நுழைக",
+		"button.forgotpassword": "கடவுச்சொல்லை மறந்துவிட்டீர்களா ?",
+		"button.signup": "பதிவு செய்யவும்",
+		"button.en": "ஆங்கிலம்",
+		"button.ta": "தமிழ்",
+		"button.fr": "பிரஞ்சு",
+		"button.hi": "இந்தி"
+	  },
+
+	"fortune_forge": {
+	  "best_sellers": "ஃபார்ச்சூன் ஃபோர்ஜில் சிறந்த விற்பனையாளர்கள்"
+	},
+	"best_sellers": {
+	  "in_dresses": "உடைகளில் சிறந்த விற்பனையாளர்கள்",
+	  "in_provisions": "தானியங்களில் சிறந்த விற்பனையாளர்கள்"
+	},
+	"add_to_cart": "பெட்டகத்தில் சேர்",
+		"CART": {
+		  "SNO": "எண்",
+		  "PRODUCT_NAME": "தயாரிப்பு பெயர்",
+		  "PRODUCT_IMAGE": "தயாரிப்பு படம்",
+		  "DESCRIPTION": "விளக்கம்",
+		  "PRICE": "விலை",
+		  "QUANTITY": "அளவு",
+		  "TOTAL": "மொத்தம்",
+		  "ACTION": "செயல்",
+		  "EMPTY_CART": "கூடை காலி செய்யவும்",
+		  "SHOP_MORE": "மேலும் வாங்குங்கள்",
+		  "CHECKOUT": "காசோலை",
+		  "GRAND_TOTAL": "மொத்தம்",
+		  "MY_CART": "என் கூடை",
+		  "EMPTY_MESSAGE": "உங்கள் கூடை காலியாக உள்ளது!",
+		  "ADD_ITEM_MESSAGE": "இப்போது ஒரு பொருளைச் சேர்க்கவும்",
+		  "SHOP_NOW": "இப்போது வாங்குங்கள்"
+		},
+		
+			"PRODUCT_DETAILS": {
+			  "HEADER": "சமர்ப்பிக்கப்பட்ட தயாரிப்பு விவரங்கள்",
+			  "NAME": "தயாரிப்பு பெயர்:",
+			  "DESCRIPTION": "தயாரிப்பு விளக்கம்:",
+			  "PRICE": "விலை:",
+			  "ADD_TO_CART": "பூச்சை சேர்க்க"
+			},
+			
+				"NAVIGATION": {
+				  "ALL_PRODUCTS": "அனைத்து பொருட்கள்",
+				  "ELECTRONICS": "மின்னணுக்கள்",
+				  "FASHION": "ஃபேஷன்",
+				  "JEWELLERY": "ஆடைகள்"
+				},
+				"PRODUCT": {
+				  "PRICE": "விலை:",
+				  "ADD_TO_CART": "கார்ட்டில் சேர்க்க"
+				},
+				
+					"SELL_PRODUCT": {
+					  "HEADER": "உங்கள் தயாரிக்கும் பொருளை விற்கவும்",
+					  "MARQUEE":"தயாரிப்பு படம் உயர் தரத்தில் இருக்க வேண்டும்.",
+					  "PRODUCT_NAME": "பொருளின் பெயர்:",
+					  "PRODUCT_DESCRIPTION": "பொருளின் விளக்கம்:",
+					  "PRODUCT_IMAGE": "பொருளின் படம்:",
+					  "PRODUCT_PRICE": "விலை:",
+					  "SUBMIT": "சமர்ப்பிக்கவும்",
+					  "PRODUCTS_BY_USERS": "பயனர்களால் விற்கப்பட்ட பொருட்கள்",
+					  "UPLOAD_SUCCESS": "பொருட்டுக்கு வெற்றிகரமாக பதிவேற்றப்பட்டது!"
+					},
+					"DELIVERY_LOCATION": "டெலிவரி இடம்",
+						"SEARCH": "தேடு",
+						"SIGN_IN": "உள்நுழைக",
+						"MEN":"ஆண்கள்",
+                        "WOMEN": "பெண்கள்",
+                        "KIDS": "குழந்தைகள்",
+                       "HOME AND KITCHEN": "வீட்டு மற்றும் அசுவை"
+				  
+				  
+			  
+			  
+		  }
+		  
+	  
+  
+

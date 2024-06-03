@@ -1,0 +1,62 @@
+<mat-dialog-content class="custom-dialog-content">
+    <div class="product-detail-container">
+      <div class="product-detail">
+        <div class="product-images">
+          <div class="image-list">
+            <img *ngFor="let image of selectedProductImages" [src]="image" (click)="selectImage(image)" [class.selected]="image === selectedImage">
+          </div>
+        </div>
+        <div class="main-image">
+          <img [src]="selectedImage" alt="Product Image">
+  
+          <div class="social-icons">
+           <a href="https://www.facebook.com/"> <i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.twitter.com/"><i class="fab fa-twitter"></i></a>
+           <a href="https://www.pinterest.com/" ><i class="fab fa-pinterest"></i></a>
+            <a href="https://www.google.com/"><i class="fab fa-google"></i></a>
+          </div>
+  
+        </div>
+        <div class="product-info">
+          <h2>{{ selectedProduct?.brand }}</h2>
+          <h3>{{ selectedProduct?.title }}</h3>
+          <div class="rating">
+            <span>{{ selectedProduct?.rating }}★</span>
+            <span>{{ selectedProduct?.reviews }} Ratings</span>
+          </div>
+          <div class="price">
+            <h3>₹{{ selectedProduct?.price }}</h3>
+            <p>
+              <del>₹{{ selectedProduct?.originalPrice }}</del>
+              <span>({{ selectedProduct?.discount }} OFF)</span>
+            </p>
+            <p>Additional GST may apply</p>
+            <p><strong>Get it for ₹{{ selectedProduct?.offerPrice }}</strong></p>
+          </div>
+          <div class="offers">
+            <p>Use Code <strong>NEW250</strong> to get it for ₹359</p>
+            <p>Get Flat Rs 250 Off on cart value of 990 & Above. <a href="#">View All Products ></a></p>
+          </div>
+          <div class="colors">
+            <p>Color</p>
+            <div class="color-options">
+              <div *ngFor="let color of selectedProduct?.colors" [style.background]="color" (click)="selectColor(color)" [class.selected]="color === selectedColor"></div>
+            </div>
+          </div>
+          <div class="sizes">
+            <p>Select Size</p>
+            <div class="size-options">
+              <span *ngFor="let size of selectedProduct?.sizes" (click)="selectSize(size)" [class.selected]="size === selectedSize">{{ size }}</span>
+            </div>
+          </div>
+          <button class="add-to-bag" (click)="addtoCart(selectedProduct)">ADD TO CART</button>
+          <div class="product-details">
+            <button>PRODUCT DETAILS</button>
+          </div>
+        </div>
+      </div>
+      <mat-dialog-actions>
+        <button class="close-button" mat-button (click)="closeDialog()">X</button>
+      </mat-dialog-actions>
+    </div>
+  </mat-dialog-content>

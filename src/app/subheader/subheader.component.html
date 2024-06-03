@@ -1,0 +1,53 @@
+
+<div class="subheader" >
+  <!-- <div class="teal-box" (click)="toggleSidebar()">
+      <i class="fas fa-bars"></i>
+  </div> -->
+  <div class="location">
+   <a [routerLink]="['/home']" routerLinkActive="active"  >
+  <img alt="logo2" src="assets/logo.png"/>
+</a>
+</div>
+
+<div id="product-name" class="name">
+  <a routerLink="/men">{{ 'MEN' | translate }}</a>
+</div>
+<div id="product-name" class="name">
+  <a routerLink="/women">{{ 'WOMEN' | translate }}</a>
+</div>
+<div id="product-name" class="name">
+  <a routerLink="/kids">{{ 'KIDS' | translate }}</a>
+</div>
+<div id="product-name" class="name">
+  <a routerLink="/home-kitchen">{{ 'HOME AND KITCHEN' | translate }}</a>
+</div>
+  <div class="search-box">
+      <input type="text" class="form-control" [(ngModel)]="searchTerm" (keyup)="search($event)" placeholder="{{ 'SEARCH' | translate }}" >
+      
+  </div>
+
+  <div class="teal-box" (click)="openSignInDialog()">
+      <i class="fas fa-user"></i>
+      <!-- <span class="ml-1">{{ 'SIGN_IN' | translate }}</span> -->
+  </div>
+      
+      <div class="dropdown">
+        <button class="dropbtn"> <i class="fas fa-globe"></i></button>
+        <div class="dropdown-content">
+            <button type="button"  (click)="useLanguage('ta')">  {{'sign-in.button.ta' | translate}}  </button>
+            <button type="button"  (click)="useLanguage('fr')">  {{'sign-in.button.fr' | translate}}  </button>
+            <button type="button" (click)="useLanguage('hi')">  {{'sign-in.button.hi' | translate}}  </button>
+            <button type="button"  (click)="useLanguage('en')"> {{'sign-in.button.en' | translate}} </button>
+          </div>
+        </div>
+    
+
+    <button routerLink="/cart" class="teal-box">
+      <i class="fas fa-cart-plus"></i> 
+      <div style="font-size:10px;" class="badge bg-danger">{{totalItem}}</div>
+  </button>
+  
+  
+
+
+  

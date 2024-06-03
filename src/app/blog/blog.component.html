@@ -1,0 +1,38 @@
+
+<div class="content" style="padding-top: 65px;">
+   <div class="container">
+    <h2>Elevate Your Shopping Experience with Expert Tips: Transforming Your Journey, One Click at a Time!</h2>
+    <div *ngFor="let blog of blogs" class="blog">
+      <h3>{{ blog.title }}</h3>
+      <p>{{ blog.content }}</p>
+      <p><em>By: {{ blog.author }}</em></p>
+      <div class="actions">
+        <button (click)="likeBlog(blog)" class="btn-like">
+          <i class="far fa-thumbs-up"></i> Like
+        </button>
+        <button (click)="shareBlog(blog)" class="btn-share">
+          <i class="fas fa-share"></i> Share
+        </button>
+      </div>
+    </div>
+  
+    <hr>
+  
+    <h2>Users experience</h2>
+    <form (submit)="submitBlog()">
+      <div class="form-group">
+        <label>Title:</label>
+        <input type="text" class="form-control" [(ngModel)]="newBlog.title" name="title" required>
+      </div>
+      <div class="form-group">
+        <label>Content:</label>
+        <textarea class="form-control" rows="5" [(ngModel)]="newBlog.content" name="content" required></textarea>
+      </div>
+      <div class="form-group">
+        <label>Author:</label>
+        <input type="text" class="form-control" [(ngModel)]="newBlog.author" name="author" required>
+      </div>
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+  </div>
+</div>

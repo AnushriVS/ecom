@@ -1,0 +1,77 @@
+<!-- 
+ <div class="tab">
+  <div class="sign-in-box">
+    <div class="sign-in-dialog">
+      <div class="close-icon" (click)="closeDialog()">&times;</div>
+      <div class="header">
+        <i class="fas fa-user"></i>
+        <span class="sign-in-text">{{ 'sign-in.title' | translate }}</span>
+      </div>
+      <hr class="teal-line">
+      <div class="form-group">
+        <label for="username">{{ 'sign-in.username.label' | translate }}</label>
+        <input type="text" id="username" class="form-control" placeholder="{{ 'sign-in.username.placeholder' | translate }}">
+      </div>
+      <div class="form-group">
+        <label for="password">{{ 'sign-in.password.label' | translate }}"></label>
+        <input type="password" id="password" class="form-control" placeholder="{{ 'sign-in.password.placeholder' | translate }}">
+      </div>
+      <div class="teal-box rounded">
+        <a  class="sign-in"  (click)="signIn()">{{ 'sign-in.button.signin' | translate }}</a>
+      </div>
+      <div class="actions">
+        <div class="teal-box rounded">
+          <a  class="forgot-password" (click)="forgotPassword()">{{ 'sign-in.button.forgotpassword' | translate }}</a>
+        </div>
+        <div class="teal-box rounded">
+          <a class="sign-up" (click)="signUp()">{{ 'sign-in.button.signup' | translate }}</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="language-buttons">
+    <button type="button" class="btn btn-primary" (click)="useLanguage('ta')"> {{ 'sign-in.button.ta' | translate }} </button>
+    <button type="button" class="btn btn-primary" (click)="useLanguage('fr')"> {{ 'sign-in.button.fr' | translate }} </button>
+    <button type="button" class="btn btn-primary" (click)="useLanguage('hi')"> {{ 'sign-in.button.hi' | translate }} </button>
+    <button type="button" class="btn btn-primary" (click)="useLanguage('en')"> {{ 'sign-in.button.en' | translate }} </button>
+  </div>
+</div>  -->
+
+<div class="tab">
+  <div class="sign-in-box">
+    <div class="sign-in-dialog">
+      <div class="close-icon" (click)="closeDialog()">&times;</div>
+      <div class="header">
+        <i class="fas fa-user"></i>
+        <span class="sign-in-text">{{ 'sign-in.title' | translate }}</span>
+      </div>
+      <hr class="teal-line">
+      <div class="form-group">
+        <label for="username">{{ 'sign-in.username.label' | translate }}</label>
+        <input type="text" id="username" class="form-control" placeholder="{{ 'sign-in.username.placeholder' | translate }}" [(ngModel)]="inputUsername">
+      </div>
+      <div class="form-group">
+        <label for="password">{{ 'sign-in.password.label' | translate }}</label>
+        <input type="password" id="password" class="form-control" placeholder="{{ 'sign-in.password.placeholder' | translate }}" [(ngModel)]="inputPassword">
+      </div>
+      <div class="teal-box rounded">
+        <a class="sign-in" (click)="signIn()">{{ 'sign-in.button.signin' | translate }}</a>
+      </div>
+      <div class="actions">
+        <div class="teal-box rounded">
+          <a class="forgot-password" (click)="forgotPassword()">{{ 'sign-in.button.forgotpassword' | translate }}</a>
+        </div>
+        <div class="teal-box rounded">
+          <a class="sign-up" (click)="signUp()">{{ 'sign-in.button.signup' | translate }}</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="language-buttons">
+    <button type="button" class="btn btn-primary" (click)="useLanguage('ta')"> {{ 'sign-in.button.ta' | translate }} </button>
+    <button type="button" class="btn btn-primary" (click)="useLanguage('fr')"> {{ 'sign-in.button.fr' | translate }} </button>
+    <button type="button" class="btn btn-primary" (click)="useLanguage('hi')"> {{ 'sign-in.button.hi' | translate }} </button>
+    <button type="button" class="btn btn-primary" (click)="useLanguage('en')"> {{ 'sign-in.button.en' | translate }} </button>
+  </div>
+</div>
+

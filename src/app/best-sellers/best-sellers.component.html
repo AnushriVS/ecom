@@ -1,0 +1,63 @@
+
+<div class="header" style="background-color: #D9D9D9;">
+  <h5>{{ 'fortune_forge.best_sellers' | translate }}</h5>
+</div>
+
+<div class="text">{{ 'best_sellers.in_dresses' | translate }}</div>
+
+    <div class="container" style="padding: 20px;">
+      <div class="row">
+        <div class="col-4" *ngFor="let dress of dresses.slice(0, 3)">
+          <div class="card">
+            <img [src]="dress.image" [alt]="dress.alt">
+            <div class="card-text">
+              <p>{{ dress.title | translate }}</p>
+              <p>₹{{ dress.price }}</p>
+              <button class="teal-box" (click)="addtoCart(dress)">
+                <span>{{ 'add_to_cart' | translate }}</span>
+                <span><i class="fas fa-shopping-cart"></i></span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+ 
+    <div class="container" style="padding: 20px;">
+      <div class="row">
+        <div class="col-4" *ngFor="let dress of dresses.slice(3)">
+          <div class="card">
+            <img [src]="dress.image" [alt]="dress.alt">
+            <div class="card-text">
+              <p>{{ dress.title | translate }}</p>
+              <p>₹{{ dress.price }}</p>
+              <button class="teal-box" (click)="addtoCart(dress)">
+                <span>{{ 'add_to_cart' | translate }}</span>
+                <span><i class="fas fa-shopping-cart"></i></span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+ =
+
+<div class="text">{{ 'best_sellers.in_provisions' | translate }}</div>
+
+<div class="container" style="padding: 20px;">
+  <div class="row">
+    <div class="col-4" *ngFor="let provision of provisions">
+      <div class="card">
+        <img [src]="provision.image" [alt]="provision.alt">
+        <div class="card-text">
+          <p>{{ provision.title | translate }}</p>
+          <p>{{ provision.price }}</p>
+          <button class="teal-box" (click)="addtoCart(provision)">
+            <span>{{ 'add_to_cart' | translate }}</span>
+            <span><i class="fas fa-shopping-cart"></i></span>
+          </button>
+        </div>
+      </div>                 
+    </div>
+  </div>
+</div>

@@ -1,0 +1,108 @@
+<!-- <div class="content" style="padding-top: 85px;">
+<div class="card-top container-fluid">
+    <div class="container d-flex">
+        <div class="item">
+            <a (click)="filter('')">
+                <img src="https://rukminim1.flixcart.com/flap/128/128/image/f15c02bfeb02d15d.png?q=100" alt="">
+                <h6>{{ 'NAVIGATION.ALL_PRODUCTS' | translate }}</h6>
+            </a>
+        </div>
+        <div class="item">
+            <a (click)="filter('electronics')">
+                <img src="https://rukminim1.flixcart.com/flap/128/128/image/69c6589653afdb9a.png?q=100" alt="">
+                <h6>{{ 'NAVIGATION.ELECTRONICS' | translate }}</h6>
+            </a>
+        </div>
+        <div class="item">
+            <a (click)="filter('fashion')">
+                <img src="https://rukminim1.flixcart.com/flap/128/128/image/82b3ca5fb2301045.png?q=100" alt="">
+                <h6>{{ 'NAVIGATION.FASHION' | translate }}</h6>
+            </a>
+        </div>
+        <div class="item">
+            <a (click)="filter('jewelery')">
+                <img style="width: 62px; margin-top: 5px;" src="https://rukminim1.flixcart.com/image/580/696/kkh6zrk0/jewellery-set/o/w/z/gt-ns-862-matushri-art-original-imafzt9teacakjyn.jpeg?q=50" alt="">
+                <h6>{{ 'NAVIGATION.JEWELLERY' | translate }}</h6>
+            </a>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row">
+        <ng-container *ngFor="let item of filterCategory | filter:searchKey:'title'">
+            <div class="card col-md-2 ">
+                <img src="{{item.image}}" alt="">
+                <h5 style="white-space: nowrap;overflow: hidden;text-overflow: ellipsis;max-width: 100ch;">{{item.title}}</h5>
+                <p style="white-space: nowrap;overflow: hidden;text-overflow: ellipsis;max-width: 100ch;">{{item.description}}</p>
+                <p><strong>{{ 'PRODUCT.PRICE' | translate }}</strong> ₹{{item.price}}</p>
+                <button class="teal-box" (click)="addtocart(item)">{{ 'PRODUCT.ADD_TO_CART' | translate }}</button>
+            </div>
+        </ng-container> 
+    </div>
+</div>
+</div> -->
+
+<div class="content" style="padding-top: 85px;">
+    <div class="card-top container-fluid">
+      <div class="container d-flex">
+        <div class="item">
+          <a (click)="filter('')">
+            <img src="https://rukminim1.flixcart.com/flap/128/128/image/f15c02bfeb02d15d.png?q=100" alt="">
+            <h6>{{ 'NAVIGATION.ALL_PRODUCTS' | translate }}</h6>
+          </a>
+        </div>
+        <div class="item">
+          <a (click)="filter('electronics')">
+            <img src="https://rukminim1.flixcart.com/flap/128/128/image/69c6589653afdb9a.png?q=100" alt="">
+            <h6>{{ 'NAVIGATION.ELECTRONICS' | translate }}</h6>
+          </a>
+        </div>
+        <div class="item">
+          <a (click)="filter('fashion')">
+            <img src="https://rukminim1.flixcart.com/flap/128/128/image/82b3ca5fb2301045.png?q=100" alt="">
+            <h6>{{ 'NAVIGATION.FASHION' | translate }}</h6>
+          </a>
+        </div>
+        <div class="item">
+          <a (click)="filter('jewelery')">
+            <img style="width: 62px; margin-top: 5px;" src="https://rukminim1.flixcart.com/image/580/696/kkh6zrk0/jewellery-set/o/w/z/gt-ns-862-matushri-art-original-imafzt9teacakjyn.jpeg?q=50" alt="">
+            <h6>{{ 'NAVIGATION.JEWELLERY' | translate }}</h6>
+          </a>
+        </div>
+      </div>
+    </div>
+  
+    <div class="container">
+      <div class="header d-flex justify-content-between align-items-center">
+        <div>{{ filteredItems ? filteredItems.length : 0 }} Items Found</div>
+        <div class="d-flex align-items-center">
+         
+          <select id="sort-by" [(ngModel)]="sortBy" (change)="sortProducts()">
+            <option value="relevance">Relevance</option>
+            <option value="price">Price</option>
+            <option value="rating">Rating</option>
+          </select>
+        </div>
+      </div>
+  
+      <div class="row">
+        <ng-container *ngFor="let item of filteredItems">
+          <div class="card col-md-4" [ngClass]="gridClass">
+            <img src="{{item.image}}" alt="">
+            <p>{{item.title}}</p>
+            <p>{{item.brand}}</p>
+            <p class="price">₹{{item.price}}</p>
+            <!-- <div class="rating" *ngIf="item.rating">
+              <span>{{item.rating}}★</span>
+              <span>{{item.reviews}} Ratings</span>
+            </div>
+            <p class="price">₹{{item.price}} <span class="discount">({{item.discount}}% off)</span></p>
+            <p class="offer-price">Offer price ₹{{item.offerPrice}}</p> -->
+            <button class="teal-box" (click)="addtocart(item)">{{ 'PRODUCT.ADD_TO_CART' | translate }}</button>
+          </div>
+        </ng-container>
+      </div>
+    </div>
+  </div>
+  

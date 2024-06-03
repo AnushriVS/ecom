@@ -1,0 +1,31 @@
+<div class="content" style="padding-top: 120px;">
+<div class="header" style="background-color: #D9D9D9;">
+  <h5>{{ 'PRODUCT_DETAILS.HEADER' | translate }}</h5>
+</div>
+<div class="container">
+  <div class="row">
+    <div *ngFor="let product of submittedData" class="col-4">
+      <div class="card">
+        <div>
+          <img [src]="product.productImage" class="card img">
+        </div>
+        <div class="card-text">
+          <strong>{{ 'PRODUCT_DETAILS.NAME' | translate }}</strong> {{ product.productName }}
+        </div>
+        <div class="card-text">
+          <strong>{{ 'PRODUCT_DETAILS.DESCRIPTION' | translate }}</strong> {{ product.productDescription }}
+        </div>
+        <div class="card-text">
+          <strong>{{ 'PRODUCT_DETAILS.PRICE' | translate }}</strong> {{ product.productPrice }}
+        </div>
+        <button class="teal-box" (click)="addtoCart(product)">
+          <div>
+            <span>{{ 'PRODUCT_DETAILS.ADD_TO_CART' | translate }}</span>
+            <span><i class="fas fa-shopping-cart"></i></span>
+          </div>
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+</div>

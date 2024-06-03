@@ -1,0 +1,164 @@
+// .card-top{
+//     position:relative;
+//     display:flex;
+//     flex-direction:column;
+//     min-width:0;
+//     word-wrap:break-word;
+//     background: #fff;
+//     background-clip:border-box;
+//     border:1px solid rgba(0,0,0,0.2);
+//     border-radius: .25rem;
+// }
+// .item img{
+//     width: 64px;
+// }
+// .item{
+//     margin:0px 15px;
+//     text-align:center;
+// }
+// .item a:hover{
+//     color:teal;
+// }
+
+// .card {
+//     //background-color: #D9D9D9;
+//     background-color: #fff;
+//     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+//     padding: 20px;
+//     margin: 20px;
+//     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+//   }
+
+// .card img{
+//     width: 160px;
+//     height: 160px;
+//     margin-bottom:15px;
+//     transition:0.3 ease-in-out;
+// }
+
+// .card img:hover{
+//     transition:0.3s ease-in-out;
+//     transform: scale(1.1);
+// }
+
+// .product-card {
+//     background: white;
+//     border: 1px solid #ccc;
+//     border-radius: 8px;
+//     overflow: hidden;
+//     transition: transform 0.3s;
+//     padding: 10px; 
+//   }
+  
+
+//   *{
+//     font-family: "Source Sans 3", sans-serif;
+//   }
+  
+
+
+.content {
+    padding-top: 85px;
+}
+
+.card-top {
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: .25rem;
+    
+}
+
+.item {
+    margin: 0px 15px;
+    text-align: center;
+}
+
+.item img {
+    width: 64px;
+}
+
+.item a:hover {
+    color: teal;
+}
+
+.header {
+    margin-bottom: 20px;
+}
+
+.grid-icons {
+    display: flex;
+    margin-left: 10px;
+}
+
+.grid-icon {
+    cursor: pointer;
+    margin: 0 5px;
+}
+
+.card {
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+    width: 20%; 
+    box-sizing: border-box; 
+}
+
+.card img {
+    width: 100%;
+    height: 200px; 
+    // object-fit: cover; 
+    margin-bottom: 15px;
+    transition: 0.3s ease-in-out;
+}
+
+.card img:hover {
+    transform: scale(1.1);
+}
+
+.card p {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    max-width: 100%;
+}
+
+.rating {
+    color: green;
+    // font-weight: bold;
+}
+
+.price {
+    font-size: 1.0em;
+    color: green;
+   align-items: center;
+    // font-weight: bold;
+}
+
+.discount {
+    color: red;
+    font-weight: normal;
+    font-size: 0.9em;
+}
+
+.offer-price {
+    color: green;
+    // font-weight: bold;
+    font-size: 1em;
+}
+
+.teal-box {
+    background-color: teal;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.teal-box:hover {
+    background-color: darkcyan;
+}

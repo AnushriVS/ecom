@@ -1,0 +1,24 @@
+/* You can add global styles to this file, and also import other style files */
+// @import url('https://fonts.googleapis.com/css2?family=Jeju+Hallasan&family=Macanudo&display=swap');
+
+
+body{
+    margin:0px;
+
+    .teal-box {
+        background-color: teal;
+        color: white;
+        padding: 10px 20px;
+        border-radius: 20px;
+        text-align: center;
+        cursor: pointer;
+      }
+
+}
+
+@import 'bootstrap/scss/bootstrap';
+
+
+*{
+  font-family: "Source Sans 3", sans-serif;
+}
