@@ -27,7 +27,6 @@ import { ConfirmationComponent } from './confirmation/confirmation.component';
 import { IntroVideoComponent } from './intro-video/intro-video.component';
 import { CouponComponent } from './coupon/coupon.component';
 import { NotesComponent } from './notes/notes.component';
-import{DropdownModule} from 'primeng/dropdown';
 import { GiftComponent } from './gift/gift.component';
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
 import { MatSlideToggleModule } from '@angular/material/slide-toggle';
@@ -142,7 +141,6 @@ export function HttpLoaderFactory(http: HttpClient) {
     HttpClientModule,
     FormsModule,
     ReactiveFormsModule,
-    DropdownModule,
     TranslateModule.forRoot({
       loader: {
         provide: TranslateLoader,
